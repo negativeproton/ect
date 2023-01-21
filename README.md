@@ -29,6 +29,7 @@ The method "get_zero_of_sw_function" in line 201 in curves.py utilizes a brute-f
 For big numbers commonly used in modern elliptic-curve cryptography, e.g. 2 to the power of 255 - 19, this takes a very long time.  
 Some research to find a faster solution didn't yield a result.  
 SageMath might have a an appropriate way.  
+This only affects the transformation of Short Weierstraß to Montgomery (line 214 in "trans_sw_to_m" in curves.py).  
 
 ## Project status
 Development has halted.
